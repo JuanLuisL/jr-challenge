@@ -3,15 +3,15 @@ class SignPage {
     //TODO: add the locators for the next elements.
 
     getEmailTextfield() {
-        return cy.get();
+        return cy.get('input[name="email"]');
     }
 
     getPasswordTextfield() {
-        return cy.get();
+        return cy.get('input[name="password"]');
     }
 
     getContinueButton() {
-        return cy.get();
+        return cy.get('button[type="submit"]');
     }
 }
 

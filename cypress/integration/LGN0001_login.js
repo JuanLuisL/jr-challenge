@@ -18,7 +18,8 @@ context('', () => {
         login.getEmailTextfield().type(user.email);
         login.getPasswordTextfield().type(user.password);
         login.getContinueButton().click();
-        //TODO: Add the assertions.
+        cy.wait(6000)
+        cy.get('img[alt="vendorplace"]').should("be.visible")
     });
 
 });
